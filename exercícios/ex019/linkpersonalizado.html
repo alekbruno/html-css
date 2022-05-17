@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Personalizado</title>
+    <style>
+        body{
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited{
+            color: darkred;
+            /* quando o link já tiver sido acessado (estado " :visited"), vai mostrar vermelho-escuro */
+        }
+            
+        a:hover{
+            text-decoration: underline;
+            /* quando o mouse flutar em cima do link (estado ":hover") ira aparecer o sublinhado */
+        }
+        
+        .especial:hover{
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            /* muda de core e adicona um fundo quando o mouse flutar(:hover) por cima */
+        }
+        .especial::before{
+            content: '>>';
+            font-weight: lighter;
+            /* adiciona antes(::before) ">>" */
+        }
+
+        .especial::after{
+            content: '<<';
+            font-weight: lighter;
+             /* adiciona depois(::after) ">>" */
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTMl5 e CSS3, acesse o 
+        <a href="https://gustavoguanabara.github.io/">
+            GitHub do Guanabara
+        </a>
+    </p>
+    <p>
+        Se quiser conhecer mais sobres os padrões, visite o site do <a href="https://www.w3c.br">Escritório do W3C no Brasil</a>
+    </p>
+    <p>
+        Para acompanhar os cursos, acesse o 
+        <a href="https://www.youtube.com/cursoemvideo/" class="especial">
+            canal do CursoemVideo
+        </a>
+    </p>
+</body>
+</html>

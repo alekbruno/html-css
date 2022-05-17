@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'London';
+            src: url('old_london/OldLondon.ttf') format('truetype'), url('old_london/OldLondon.otf') format('ontype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*  .otf e .ttf são os tipos de fontes, recomendado carregar mais de um para garantir que a maioria dos navegadores possam interpretar 
+                Tipos de format('')
+                ontype - otf
+                truetype - ttf
+                embedded-ontype
+                truetype-aat - Apple Advance Typography
+                svg 
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'London', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título, olá mundo!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus provident sequi beatae repellat ab harum, iusto numquam alias quis unde quos odio hic et excepturi error commodi illum? Tenetur, fugit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsam ea nostrum. Accusamus odio voluptate similique at excepturi. Doloribus iusto maiores ab animi vero illo cum fugiat iste eum reprehenderit.</p>
+</body>
+</html>

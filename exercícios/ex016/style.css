@@ -1,0 +1,7 @@
+*{ /* configurações globais*/
+    height: 100%;
+}
+body{
+    background-image:radial-gradient(circle, #6DA34D, #56445D 10%, #548687, #C5E99B)
+}
+ /* para um gradiente linear basta mudar "radial-gradient" para "linear-gradient" e trocar o "circle" pelo grau do gradiente como "90deg" ou angulo desejado por exemplo */
